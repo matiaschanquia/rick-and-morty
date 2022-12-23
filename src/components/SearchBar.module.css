@@ -1,0 +1,10 @@
+.containerSearch {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.containerSearch > input {
+    border-radius: 7px;
+    border: 1px solid black;
+}

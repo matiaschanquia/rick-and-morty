@@ -1,0 +1,53 @@
+.containerNav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 103, 119);
+    padding: 20px 30px;
+    margin: 20px auto;
+    border: 2px solid lightblue;
+    border-radius: 15px;
+    align-items: center;
+    width: 96%;
+    gap: 20px;
+}
+
+.containerNav button {
+    color: white;
+    background-color: rgb(113, 184, 5);
+    font-weight: 900;
+    border-radius: none;
+    padding: 10px;
+    transition: box-shadow .3s ease-in-out;
+    cursor: pointer;
+    border: 2px solid green;
+    border-radius: 12px;
+}
+
+.containerNav button:hover {
+    box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.329);
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+.links span {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.links span:hover {
+    text-decoration: underline;
+}
+
+.linkActive span {
+    color: #b4ffa0;
+}
+
+@media (max-width: 700px) {
+    .containerNav {
+        flex-direction: column;  
+    }
+}
