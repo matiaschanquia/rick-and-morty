@@ -55,4 +55,7 @@
     .containerDetail {
         flex-direction: column;
     }
+    .containerDetail > figure {
+        width: 60%;
+    }
 }
