@@ -5,10 +5,16 @@
     border-radius: 10px;
     border: 1px solid whitesmoke;
     position: relative;
+    width: 340px;
+}
 
+.containerChar > img {
+    display: block;
+    width: 100%;
 }
 
 .botonX {
+    cursor: pointer;
     display: block;
     margin: 5px 5px 5px auto;
     background-color: red;

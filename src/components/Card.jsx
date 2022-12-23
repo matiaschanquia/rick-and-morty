@@ -6,7 +6,7 @@ export default function Card(props) {
    return (
       <div className={style.containerChar}>
          <button className={style.botonX} onClick={() => props.onClose(props.id)}>X</button>
-         <img  src={props.image} alt="" />
+         <img  src={props.image} alt={props.name} />
          <NavLink to={`/detail/${props.id}`}>
             <h2 className={style.name}>{props.name}</h2>
          </NavLink>
