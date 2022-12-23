@@ -1,3 +1,9 @@
+# Rick y Morty app
+
+Esta aplicación web permite agregar un personaje de Rick y Morty al azar y también permite añádir un personaje por su ID (entre 0 y 826). A su vez, implemente una forma de navegar entre distintas rutas, haciendo click sobre el nombre se dirige a una ruta con mas detalles sobre el personaje.
+
+<a href="https://rick-and-morty-app-api.netlify.app/">Link de la app</a>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
