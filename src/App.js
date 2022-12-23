@@ -2,15 +2,14 @@ import React, { useState } from "react";
 import Cards from "./components/Cards.jsx";
 import Nav from "./components/Nav";
 import "./global.css";
-import { Route, Routes, useNavigate } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import About from "./components/About.jsx";
 import Footer from "./components/Footer.jsx";
 import Detail from "./components/Detail.jsx";
 
 function App() {
     const [characters, setCharacters] = useState([]);
-    const navigate = useNavigate();
-    navigate("/home");
+
     const onSearch = (character) => {
         fetch(`https://rickandmortyapi.com/api/character/${character}`)
             .then((response) => response.json())
@@ -48,6 +47,7 @@ function App() {
                 <Route path="/home" element={ <Cards onClose={onClose} characters={characters} /> }/>
                 <Route path="/about" element={ <About /> }/>
                 <Route path="/detail/:id" element={ <Detail /> } />
+                <Route path="/" element={ <Navigate to="/home" replace/> }/>
             </Routes>
             <Footer />
             
